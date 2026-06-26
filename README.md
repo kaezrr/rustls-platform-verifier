@@ -311,7 +311,7 @@ can do this for you:
 #### Crate initialization
 
 In order for the crate to call into the JVM, it needs handles from Android. These
-are provided one of the `init_with_env`, `init_with_refs` or `init_with_runtime` functions. These give `rustls-platform-verifier`
+are provided by one of the `init_with_env`, `init_with_refs` or `init_with_runtime` functions. These give `rustls-platform-verifier`
 the resources it needs to make calls into the Android certificate verifier.
 
 As an example, if your Rust Android component which the "native" Android
