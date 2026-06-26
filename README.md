@@ -317,7 +317,7 @@ the resources it needs to make calls into the Android certificate verifier.
 As an example, if your Rust Android component which the "native" Android
 part of your app calls at startup has an initialization, like this:
 
-```rust,ignore
+```rust ,ignore
 use jni::jni_mangle;
 use jni::objects::{JClass, JObject};
 use jni::EnvUnowned;
@@ -336,7 +336,7 @@ In the simplest case, you should to insert a call to `rustls_platform_verifier::
 before any networking has a chance to run. This only needs to be called once and
 the verifier will be valid for the lifetime of your app's process.
 
-```rust,ignore
+```rust ,ignore
 use jni::errors::ThrowRuntimeExAndDefault;
 use jni::jni_mangle;
 use jni::objects::{JClass, JObject};
